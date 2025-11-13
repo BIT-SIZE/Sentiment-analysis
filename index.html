@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    <title>Sentiment Analysis Dashboard | Tweet Analyzer</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide scrollbars on page */
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            overflow: hidden;
+        }
+
+        /* Hide scrollbars (cross-browser) */
+        iframe::-webkit-scrollbar {
+            display: none; /* Chrome, Safari */
+        }
+        iframe {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;     /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://sentiment-viz-flows.vercel.app/" frameborder="0"></iframe>
+</body>
+</html>
